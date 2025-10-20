@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>parkingco — Parking cerca de ti</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <meta name="description" content="parkingco — Parking cerca de ti, cuidando lo que valoras." />
+</head>
+<body>
+
+  <!-- ======================================
+       PANTALLA DE CARGA (LOADER)
+       ====================================== -->
+ <div id="loader" class="loader">
+  <div class="loader-inner">
+    <img src="assets/img/logo-parkingco.png" alt="Logo Parkingco" width="120" height="120" loading="eager" />
+    <p class="loader-text">parkingco</p>
+  </div>
+</div>
+
+  <!-- ======================================
+       BARRA DE NAVEGACIÓN (HEADER)
+       ====================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+<a href="#inicio" class="logo" data-link>
+    <img src="assets/img/logo-parkingco.png"  alt="Logo Parkingco" width="42" height="42" class="logo-img" />
+    
+  <span class="logo-text">parkingco</span>
+</a>
+
+
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="#inicio" data-link>Inicio</a></li>
+          <li><a href="#servicios" data-link>Servicios</a></li>
+          <li><a href="#promociones" data-link>Promociones</a></li>
+          <li><a href="#encuentranos" data-link>Encuéntranos</a></li>
+          <li><a href="#contacto" data-link>Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <button id="btn-hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content (SPA single page) -->
+  <main>
+
+    <!-- ======================================
+         HERO / SECCIÓN DE INICIO
+         ====================================== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Parkingco cerca de ti, cuidando lo que valoras.</h1>
+          <p class="hero-sub">Encuentra espacios seguros, cómodos y con opciones que se adaptan a tu día a día.</p>
+          <a href="#encuentranos" class="btn btn-primary" data-link>Buscar parking</a>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <!-- Ilustración lineal de ciudad, estilizada en azul -->
+          <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+            <g fill="none" stroke="#3498db" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+              <!-- skyline simplified -->
+              <path d="M10 300 L60 200 L120 220 L170 160 L230 200 L300 120 L360 170 L420 140 L480 210 L540 180 L600 230 L660 200 L740 240 L790 220" />
+              <rect x="85" y="210" width="30" height="90" />
+              <rect x="150" y="180" width="40" height="120" />
+              <rect x="265" y="135" width="50" height="165" />
+              <rect x="380" y="160" width="35" height="140" />
+              <rect x="520" y="120" width="60" height="180" />
+              <!-- some windows -->
+              <g opacity="0.6">
+                <line x1="285" y1="155" x2="305" y2="155" />
+                <line x1="285" y1="175" x2="305" y2="175" />
+                <line x1="285" y1="195" x2="305" y2="195" />
+                <line x1="285" y1="215" x2="305" y2="215" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================
+         NUESTROS SERVICIOS
+         ====================================== -->
+    <section id="servicios" class="services section">
+      <div class="container">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-lead">Soluciones para cada necesidad: corta estadía, beneficios premium y planes mensuales.</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- icon coche -->
+              <svg viewBox="0 0 24 24"><path d="M3 12l1-3h16l1 3v6a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0h-6a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-6z" fill="#3498db" /></svg>
+            </div>
+            <h3>Parqueo</h3>
+            <p>Estadías por horas o días en espacios verificados y seguros.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- icon estrella -->
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.5L22 9.1l-5 4.2L18 22l-6-3.6L6 22l1-8.7L2 9.1l7.1-.6L12 2z" fill="#3498db"/></svg>
+            </div>
+            <h3>Parkingco Premium</h3>
+            <p>Beneficios exclusivos: prioridad, seguridad extra y promociones especiales.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <!-- icon calendar -->
+              <svg viewBox="0 0 24 24"><path d="M3 7h18v14H3zM16 3v4M8 3v4" fill="#3498db"/></svg>
+            </div>
+            <h3>Mensualidades</h3>
+            <p>Planes mensuales a precio preferencial para usuarios recurrentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================
+         PROMOCIONES (Línea de tiempo)
+         ====================================== -->
+    <section id="promociones" class="promotions section">
+      <div class="container">
+        <h2 class="section-title">Tu parqueo se convierte en PREMIO</h2>
+        <p class="section-lead">6 semanas para vivirlo.</p>
+
+        <div class="timeline">
+          <!-- Each phase -->
+          <div class="timeline-item">
+            <div class="timeline-icon">🧼</div>
+            <div class="timeline-body">
+              <h4>LAVADO</h4>
+              <span class="date">15 al 30 SEP</span>
+              <p>Visítanos y participa acumulando visitas para acceder a los premios.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">✨</div>
+            <div class="timeline-body">
+              <h4>POLICHADO</h4>
+              <span class="date">1 al 15 OCT</span>
+              <p>Servicio extra que dejará tu vehículo como nuevo. Sigue acumulando.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🎁</div>
+            <div class="timeline-body">
+              <h4>KIT PREMIUM</h4>
+              <span class="date">16 al 31 OCT</span>
+              <p>Entrega de kits para los ganadores registrados por visitas acumuladas.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🏁</div>
+            <div class="timeline-body">
+              <h4>CASOLINA (GRAN FINAL)</h4>
+              <span class="date">Gran final</span>
+              <p>Evento de cierre con premio principal — ¡no te lo pierdas!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="promotions-cta">
+          <p>Acumula visitas en nuestros parkings y aumenta tu oportunidad de ganar.</p>
+          <a href="#promociones" class="btn btn-outline">Más información</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================
+         ENCUÉNTRANOS (MAPA)
+         ====================================== -->
+    <section id="encuentranos" class="map-section section">
+      <div class="container">
+        <h2 class="section-title">Encuéntranos en</h2>
+        <p class="section-lead">Escribe dónde buscas un parking y explora ubicaciones cercanas.</p>
+
+        <div class="map-search">
+          <input type="search" id="map-search" placeholder="En donde buscas un parking" aria-label="Buscar ubicación" />
+          <button id="btn-search" class="btn">Buscar</button>
+        </div>
+
+        <div class="map-responsive">
+          <!-- Nota: reemplaza el src con el embed de Google Maps que prefieras. -->
+          <iframe
+             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15905.183257350027!2d-74.08844800789713!3d4.71859169641148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scentros%20comerciales%20bogota!5e0!3m2!1ses-419!2sco!4v1760923872775!5m2!1ses-419!2sco" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================
+         CONTACTO
+         ====================================== -->
+    <section id="contacto" class="contact section">
+      <div class="container contact-grid">
+        <div class="contact-illustration" aria-hidden="true">
+          <!-- Ilustración agente -->
+          <svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid meet">
+            <g fill="none" stroke="#3498db" stroke-width="2">
+              <circle cx="100" cy="60" r="30" />
+              <path d="M60 110c0-20 80-20 80 0v40H60z" />
+              <path d="M130 90v10a8 8 0 0 0 8 8h8" />
+              <rect x="58" y="150" width="84" height="14" rx="3" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2 class="section-title">¿Necesitas algo?</h2>
+          <p class="section-lead">Déjanos tus datos y nuestro equipo se pondrá en contacto contigo.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nombre <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Teléfono <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="(+57) 3XX XXX XXXX" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Correo electrónico <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="tu@correo.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="category">Categoría <span class="required">*</span></label>
+              <select id="category" name="category" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="soporte">Soporte</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="colaboracion">Colaboración</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensaje <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+
+            <div class="form-row checkbox-row">
+              <input type="checkbox" id="policy" name="policy" required />
+              <label for="policy">Aceptar nuestras políticas de tratamiento de datos</label>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+
+            <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================
+       FOOTER
+       ====================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <p>Calle 128c #95b-58, Bogotá, Colombia</p>
+        <p>Horario: Lun - Dom 6:00 - 22:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>Tel: (+57) 302 645 8124</p>
+        <p>Email: contacto@parkingco.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Políticas de tratamiento de datos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Descarga la app</h4>
+        <p>Próximamente en App Store y Google Play</p>
+        <div class="store-buttons">
+          <span class="store-badge">App Store</span>
+          <span class="store-badge">Google Play</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <small>© <span id="year"></span> parkingco. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
