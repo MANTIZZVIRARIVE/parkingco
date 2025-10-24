@@ -141,3 +141,23 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+  /* ------------------ BOTÓN VOLVER ARRIBA ------------------ */
+  const backToTopBtn = document.getElementById('backToTop');
+
+  // Muestra u oculta el botón al hacer scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Muestra el botón después de hacer scroll 300px
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+
+  // Función para subir suavemente al hacer clic
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Desplazamiento suave
+    });
+  });
+
