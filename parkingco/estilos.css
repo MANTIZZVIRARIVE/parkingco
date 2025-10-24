@@ -175,4 +175,36 @@ a{ color:inherit; }
   vertical-align: middle;
   margin-right: 8px;
 }
+/* --------------- BOTÓN VOLVER ARRIBA --------------- */
+.back-to-top {
+  position: fixed; /* Lo mantiene fijo en la pantalla al hacer scroll */
+  bottom: 25px;    /* Distancia desde la parte inferior */
+  right: 25px;     /* Distancia desde la parte derecha */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Lo hace redondo */
+  background-color: var(--primary); /* Usa tu color verde principal */
+  color: var(--bg-main); /* Color del icono (gris oscuro) */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Oculto por defecto */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+  z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+  box-shadow: 0 4px 12px var(--shadow-color); /* Sombra que combina con el tema */
+}
+
+.back-to-top.visible {
+  opacity: 1; /* Se hace visible */
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px); /* Pequeño efecto al pasar el ratón */
+  background-color: var(--primary-hover); /* Usa el verde más oscuro para el hover */
+}
+
 
